@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Premium Gradients & Effects */
+.bg-mesh-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 102, 204, 0.25) 0%, rgba(120, 40, 200, 0.15) 30%, rgba(0, 0, 0, 0) 70%);
+  background-size: 200% 200%;
+  animation: pulse-glow 8s ease-in-out infinite;
+}
+
+.apple-intelligence-glow {
+  background: radial-gradient(circle at center, rgba(147, 51, 234, 0.2) 0%, rgba(59, 130, 246, 0.15) 25%, rgba(0, 0, 0, 0) 65%);
+}
+
+.card-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(180deg, #ffffff 0%, #a1a1a6 100%);
+}
+
+.text-gradient-apple-intel {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #ff4500, #ff007f, #9b59b6, #3498db, #2ecc71);
+  background-size: 200% auto;
+  animation: shimmer 6s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Custom interactive filters for color switching */
+.filter-natural {
+  filter: drop-shadow(0 0 50px rgba(178, 171, 161, 0.3)) saturate(1.1) brightness(1.05);
+}
+
+.filter-space-black {
+  filter: drop-shadow(0 0 50px rgba(60, 60, 61, 0.2)) saturate(0.6) brightness(0.7);
+}
+
+.filter-silver {
+  filter: drop-shadow(0 0 50px rgba(229, 230, 225, 0.25)) saturate(0.9) brightness(1.2);
+}
+
+.filter-deep-blue {
+  filter: drop-shadow(0 0 50px rgba(47, 57, 77, 0.35)) hue-rotate(185deg) saturate(1.4) brightness(0.95);
+}
+
+/* Battery animations */
+@keyframes batteryCharge {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.battery-fill {
+  animation: batteryCharge 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Slideshow progress bar animations */
+@keyframes slideProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-slide-progress {
+  animation: slideProgress 5000ms linear forwards;
+}
+
+
