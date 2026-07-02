@@ -4,6 +4,7 @@ const materialDesignVideoSrc = "https://res.cloudinary.com/dz4zobnat/video/uploa
 const a19ProVideoSrc = "https://res.cloudinary.com/dz4zobnat/video/upload/v1782983615/a-19-pro_gsqf7b.mp4";
 const cameraVideoSrc = "https://res.cloudinary.com/dz4zobnat/video/upload/v1782987986/camera_dtifc2.mp4";
 const intelligenceVideoSrc = "https://res.cloudinary.com/dz4zobnat/video/upload/v1782989083/Apple_Intelligence_and_Siri_2_bfqzc7.mp4";
+const ios26VideoSrc = "https://res.cloudinary.com/dz4zobnat/video/upload/v1782991547/liquid-glass_zfxgth.mp4"
 
 export const SLIDES: Slide[] = [
   {
@@ -129,7 +130,7 @@ export const SLIDES: Slide[] = [
     title: "iOS 26. Intelligent to the Core.",
     subtitle: "iOS 26",
     description: "Experience our most intuitive software yet. Dynamic homescreens, context-aware system widgets, and seamlessly fluid animations designed for the future.",
-    videoSrc: a19ProVideoSrc,
+    videoSrc: ios26VideoSrc,
     illustration: (
       <svg className="w-full h-full p-10 text-white opacity-90 transition-transform duration-500 hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="25" y="10" width="50" height="80" rx="12" stroke="currentColor" strokeWidth="1.5" opacity="0.3" />
@@ -156,43 +157,43 @@ export const SLIDES: Slide[] = [
       </svg>
     )
   },
-  {
-    id: 7,
-    badge: "07",
-    title: "Four Distinct Finishes",
-    subtitle: "Available Colors",
-    description: "Natural Titanium, Space Black, White Titanium, and Cobalt Titanium. Selected colors glow dynamically to match your personal standard.",
-    videoSrc: a19ProVideoSrc,
-    illustration: (
-      <svg className="w-full h-full p-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="50" cy="50" r="30" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" opacity="0.2" />
-        <circle cx="36" cy="38" r="14" fill="url(#s_gradNatural)" stroke="white" strokeWidth="0.5" />
-        <circle cx="64" cy="38" r="14" fill="url(#s_gradBlack)" stroke="white" strokeWidth="0.5" />
-        <circle cx="36" cy="62" r="14" fill="url(#s_gradSilver)" stroke="white" strokeWidth="0.5" />
-        <circle cx="64" cy="62" r="14" fill="url(#s_gradBlue)" stroke="white" strokeWidth="0.5" />
-        <defs>
-          <radialGradient id="s_gradNatural" cx="35%" cy="35%" r="65%">
-            <stop offset="0%" stopColor="#e5ded4" />
-            <stop offset="45%" stopColor="#b2aba1" />
-            <stop offset="100%" stopColor="#4c473f" />
-          </radialGradient>
-          <radialGradient id="s_gradBlack" cx="35%" cy="35%" r="65%">
-            <stop offset="0%" stopColor="#666667" />
-            <stop offset="45%" stopColor="#3c3c3d" />
-            <stop offset="100%" stopColor="#1a1a1b" />
-          </radialGradient>
-          <radialGradient id="s_gradSilver" cx="35%" cy="35%" r="65%">
-            <stop offset="0%" stopColor="#ffffff" />
-            <stop offset="45%" stopColor="#e5e6e1" />
-            <stop offset="100%" stopColor="#a8a9a4" />
-          </radialGradient>
-          <radialGradient id="s_gradBlue" cx="35%" cy="35%" r="65%">
-            <stop offset="0%" stopColor="#5d729a" />
-            <stop offset="45%" stopColor="#2f394d" />
-            <stop offset="100%" stopColor="#111621" />
-          </radialGradient>
-        </defs>
-      </svg>
-    )
-  }
+  // {
+  //   id: 7,
+  //   badge: "07",
+  //   title: "Four Distinct Finishes",
+  //   subtitle: "Available Colors",
+  //   description: "Natural Titanium, Space Black, White Titanium, and Cobalt Titanium. Selected colors glow dynamically to match your personal standard.",
+  //   videoSrc: a19ProVideoSrc,
+  //   illustration: (
+  //     <svg className="w-full h-full p-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  //       <circle cx="50" cy="50" r="30" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" opacity="0.2" />
+  //       <circle cx="36" cy="38" r="14" fill="url(#s_gradNatural)" stroke="white" strokeWidth="0.5" />
+  //       <circle cx="64" cy="38" r="14" fill="url(#s_gradBlack)" stroke="white" strokeWidth="0.5" />
+  //       <circle cx="36" cy="62" r="14" fill="url(#s_gradSilver)" stroke="white" strokeWidth="0.5" />
+  //       <circle cx="64" cy="62" r="14" fill="url(#s_gradBlue)" stroke="white" strokeWidth="0.5" />
+  //       <defs>
+  //         <radialGradient id="s_gradNatural" cx="35%" cy="35%" r="65%">
+  //           <stop offset="0%" stopColor="#e5ded4" />
+  //           <stop offset="45%" stopColor="#b2aba1" />
+  //           <stop offset="100%" stopColor="#4c473f" />
+  //         </radialGradient>
+  //         <radialGradient id="s_gradBlack" cx="35%" cy="35%" r="65%">
+  //           <stop offset="0%" stopColor="#666667" />
+  //           <stop offset="45%" stopColor="#3c3c3d" />
+  //           <stop offset="100%" stopColor="#1a1a1b" />
+  //         </radialGradient>
+  //         <radialGradient id="s_gradSilver" cx="35%" cy="35%" r="65%">
+  //           <stop offset="0%" stopColor="#ffffff" />
+  //           <stop offset="45%" stopColor="#e5e6e1" />
+  //           <stop offset="100%" stopColor="#a8a9a4" />
+  //         </radialGradient>
+  //         <radialGradient id="s_gradBlue" cx="35%" cy="35%" r="65%">
+  //           <stop offset="0%" stopColor="#5d729a" />
+  //           <stop offset="45%" stopColor="#2f394d" />
+  //           <stop offset="100%" stopColor="#111621" />
+  //         </radialGradient>
+  //       </defs>
+  //     </svg>
+  //   )
+  // }
 ];
