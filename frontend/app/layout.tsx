@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +28,19 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <head>
+        <link 
+          href="https://cdn.jsdelivr.net/npm/cloudinary-video-player@4.0.3/dist/player.min.css" 
+          rel="stylesheet"
+        />
+      </head>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Script
+          src="https://cdn.jsdelivr.net/npm/cloudinary-video-player@4.0.3/dist/player.min.js"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
